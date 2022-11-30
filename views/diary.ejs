@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>diary</title>
+</head>
+<link rel="stylesheet" href="resdiary.css">
+<link rel="stylesheet" href="other_button.css">
+<body>
+    <div class="container">
+        <div class="content">
+            <nav>
+                <div class="user">
+                    <div class="logo">
+                        <ul>
+                            <li>
+                                <a href="/" class="user_logo">Diagram</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="button_wrapper">
+                        <ul>
+                            <li>
+                                <button type="button" onclick="location.href='/diary'">일기장</button>                                
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <button type="button" onclick="location.href='/login'">Login</button>                                
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+
+
+            <div class="form_wrapper">
+                <div class="form">
+                    <form method="POST" action="/register">
+                        <div class="form_filed">
+                            <p> <%= result[0]?.date %> 의 기억</p>
+                              <!--여기에 사진--> 
+                                <% for (var i=0; i<result.length; i++) { %>
+                                    <img src="<%= result[i]?.img %>">
+                                <% } %>
+            
+                            <p>
+                                그때 그 시절 나의 이야기
+                            </p>
+                            <div class="comments">
+                                <% for (var i=0; i<result.length; i++) { %>
+                                    <p> <%= result[i]?.comments %> </p>
+                                 <% } %>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
