@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+</head>
+<link rel="stylesheet" href="login.css">
+<link rel="stylesheet" href="other_button.css">
+
+<body>
+    <div class="container">
+        <div class="content">
+            <nav class="user">
+                <ul>
+                    <li>
+                        <a href="/" class="user_logo">Diagram</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="form_wrapper">
+                <div class="form">
+                    <form method="POST" action="/login">
+                        <div class="form_filed">
+                            <p>ID</p> 
+                            <input type="text" placeholder="ID 를 입력하세요" name="uid" class="input">
+                            <p>Password</p>
+                            <input type="password" placeholder="Password 를 입력하세요" name="upwd" class="input">
+                        </div>
+
+                       <div class="user_btn">
+                            <button type="submit" id="submit_button" class="btn_input">로그인</button>
+                       </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

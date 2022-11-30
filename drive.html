@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>drive</title>
+</head>
+<link rel="stylesheet" href="drive.css">
+<link rel="stylesheet" href="other_button.css">
+
+<body>
+    <div class="container">
+        <div class="content">
+            <nav>
+                <div class="user">
+                    <div class="logo">
+                        <ul>
+                            <li>
+                                <a href="/" class="user_logo">Diagram</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="button_wrapper">
+                        <ul>
+                            <li>
+                                <button type="button" onclick="location.href='/diary'">일기장</button>                                
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <button type="button" onclick="location.href='/login'">Login</button>                                
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            
+            <header>
+                <p> 오늘 하루를 추억해봐요. 기록된 추억은 일기장에서 확인할 수 있습니다.</p>
+            </header>
+
+
+            <div class="form_wrapper">
+                <div class="form">
+                        
+                    <form method="POST" enctype="multipart/form-data">
+                        
+                             <div class="form_filed">
+                                         <p>사진을 업로드 하세요</p>
+                                         <input type="file" name="upload_file"  accept="image/*"id="uploadfile">
+                                         <p>사진과 함께 남길 말을 입력해주세요</p>
+                                         <textarea name="comments" id="text" cols="60" rows="10" placeholder="여기에 사진과 오늘을 함께 남겨봐요"></textarea>
+                            </div>
+
+                            <div class="user_btn">
+                                <button type="submit">업로드하기</button>
+                            </div>
+                           
+                    </form>
+                        
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+</body>
+</html>
+

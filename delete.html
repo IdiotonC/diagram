@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>delete</title>
+</head>
+<link rel="stylesheet" href="diary.css">
+<link rel="stylesheet" href="other_button.css">
+<body>
+    <div class="container">
+        <div class="content">
+            <nav>
+                <div class="user">
+                    <div class="logo">
+                        <ul>
+                            <li>
+                                <a href="/" class="user_logo">Diagram</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="button_wrapper">
+                        <ul>
+                            <li>
+                                <button type="button" onclick="location.href='/drive'">일기 작성</button>                                
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <button type="button" onclick="location.href='/diary'">일기장</button>                                
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <button type="button" onclick="location.href='/login'">Login</button>                                
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+
+            
+            <div class="form_wrapper">
+                <div class="form">
+                    <form method="POST">
+                        <div class="form_filed">
+                            <p>지우고 싶은 그땐 언제인가요?</p>
+                            <textarea name="date_req" id="text" cols="50" rows="5" placeholder="yyyy-mm-dd 형식으로 날짜를 써주세요"></textarea>
+                        </div>
+                       <div class="user_btn">
+                            <button type="submit" id="submit_button" class="btn_input">추억 삭제하기</button>
+                       </div>
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+</body>
+</html>
